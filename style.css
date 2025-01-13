@@ -1,0 +1,123 @@
+:root {
+    --dominantBg: #1F2122;
+    --dominantBg2: #292B2D;
+    --dominantBg3: #323637;
+    --dominantBg4: #444D4F;
+
+    --dominantTxt: #fff;
+    --dominantTxt2: #9f9f9f;
+
+}
+
+.widget_root {
+    background: var(--dominantBg);
+    color: var(--dominantTxt);
+    border: 1px solid var(--dominantBg3);
+    width: 220px;
+    border-radius: 4px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 4px;
+
+}
+.widget_block{
+    background: var(--dominantBg2);
+    color: var(--dominantTxt2);
+    border: 1px solid var(--dominantBg2);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.widget_block_content{
+    background: var(--dominantBg2);
+    color: var(--dominantTxt2);
+    padding: 8px;
+}
+.widget_block_header{
+    background: var(--dominantBg);
+    color: var(--dominantTxt2);
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.widget_block_header > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.widget_block_header > span {
+    font-size: 10px;
+    color: var(--dominantTxt2);
+}
+.picker_control{
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        column-gap: 4px;
+        width: calc(50% - 4px - 1px);
+}
+.row{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    column-gap: 4px;
+}
+
+.picker_swatch{
+    width: 30px;
+    height: 30px;
+    background-color: #ffb700;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+}
+
+.picker_control > span{
+    font-size: 10px;
+    color: var(--dominantTxt2);
+    flex-grow: 1;
+    text-align: end;
+
+}
+
+.separator{
+    width: 1px;
+    background: var(--dominantBg3);
+    height: 25px;
+    display: block;
+    flex-shrink: 0;
+}
+
+
+.picker_swatch_triangle{
+    --size: 10px;
+    width: var(--size);
+    height: var(--size);
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+.picker_swatch_triangle > div{
+    --size: 8px;
+    width: var(--size);
+    height: var(--size);
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%) rotate(45deg);
+    display: block;
+
+}
