@@ -9,6 +9,10 @@
 
 }
 
+body{
+    background: var(--dominantBg4);
+}
+
 .widget_root {
     background: var(--dominantBg);
     color: var(--dominantTxt);
